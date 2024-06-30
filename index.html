@@ -16,36 +16,32 @@
 
     <section id="download">
         <h2>Download</h2>
-        <a href="Mario Maker.zip" class="download-button">Download Now</a>
+        <p><a href="path_to_your_game_download.zip" class="download-button">Download Game</a></p>
     </section>
 
     <section id="update-logs">
         <h2>Update Logs</h2>
-        <ul id="logs-list"></ul>
+        <ul id="logs-list">
+            <!-- Update logs will be dynamically added here -->
+        </ul>
     </section>
 
     <section id="comments">
         <h2>Comments</h2>
-        <form id="comment-form">
+        <div id="comment-form">
+            <label for="comment-type">Choose a label:</label>
             <select id="comment-type">
-                <option value="Bug">Bug</option>
-                <option value="Feature request">Feature request</option>
-                <option value="Comment">Comment</option>
+                <option value="comment">Comment</option>
+                <option value="bug">Bug</option>
+                <option value="feature">Feature Request</option>
             </select>
-            <input type="text" id="comment-input" placeholder="Type your comment here" required>
-            <input type="file" id="comment-images" multiple>
-            <button type="submit" id="submit-comment">Post Comment</button>
-        </form>
-        <ul id="comments-list"></ul>
-    </section>
-
-    <section id="levels">
-        <h2>Levels that users created</h2>
-        <form id="upload-level-form">
-            <input type="file" id="level-file-input" accept=".smw" required>
-            <button type="submit" id="upload-level-button">Upload</button>
-        </form>
-        <ul id="levels-list"></ul>
+            <textarea id="comment-input" placeholder="Type your comment here"></textarea>
+            <input type="file" id="comment-images" accept="image/*" multiple>
+            <button id="submit-comment">Submit</button>
+        </div>
+        <ul id="comments-list">
+            <!-- Comments will be dynamically added here -->
+        </ul>
     </section>
 
     <script src="script.js"></script>
