@@ -1,0 +1,130 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    background-image: url('bg.png'); /* Add your screenshot image here */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+section {
+    padding: 40px 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Download section */
+#download {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #218838;
+}
+
+/* Update logs section */
+#update-logs {
+    padding: 40px 20px;
+}
+
+/* Comments section */
+#comments {
+    padding: 40px 20px;
+}
+
+.comment-images {
+    margin-top: 10px;
+}
+
+.delete-button, .reply-button {
+    margin-top: 5px;
+}
+
+/* Levels section */
+#levels {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+#upload-level-form {
+    margin-bottom: 20px;
+}
+
+#level-file-input {
+    margin-right: 10px;
+}
+
+.delete-level-button, .download-level-button {
+    margin-left: 10px;
+}
