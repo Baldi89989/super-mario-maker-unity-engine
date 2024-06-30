@@ -1,7 +1,5 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
@@ -25,106 +23,105 @@ body {
     border-radius: 10px;
 }
 
-
 section {
     padding: 40px 20px;
 }
 
-h1, h2 {
-    color: #333;
-}
-
-h2 {
-    margin-top: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-button {
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Hero section */
-.hero {
-    background-color: #f8f9fa;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Download section */
-#download {
-    background-color: #e9ecef;
-    padding: 40px 20px;
+#download, #update-logs, #comments {
     text-align: center;
 }
 
 .download-button {
-    display: inline-block;
-    background-color: #28a745;
-    color: #fff;
+    background-color: #1a73e8;
+    color: white;
+    padding: 15px 25px;
     text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 .download-button:hover {
-    background-color: #218838;
+    background-color: #155cb0;
 }
 
-/* Update logs section */
-#update-logs {
-    padding: 40px 20px;
+#update-logs ul, #comments ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-/* Comments section */
-#comments {
-    padding: 40px 20px;
+#update-logs li, #comments li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
 }
 
-.comment-images {
-    margin-top: 10px;
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#comment-type, #comment-input, #comment-images {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#submit-comment {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-comment:hover {
+    background-color: #155cb0;
 }
 
 .delete-button, .reply-button {
-    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Levels section */
-#levels {
-    background-color: #f8f9fa;
-    padding: 40px 20px;
+.reply-button {
+    background: green;
+    right: 80px;
 }
 
-#upload-level-form {
-    margin-bottom: 20px;
+.delete-button:hover {
+    background: darkred;
 }
 
-#level-file-input {
-    margin-right: 10px;
+.reply-button:hover {
+    background: darkgreen;
 }
 
-.delete-level-button, .download-level-button {
-    margin-left: 10px;
+.comment-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.comment-image {
+    max-width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.reply-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
 }
