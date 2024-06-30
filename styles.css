@@ -1,5 +1,7 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
@@ -23,105 +25,106 @@ body {
     border-radius: 10px;
 }
 
+
 section {
     padding: 40px 20px;
 }
 
-#download, #update-logs, #comments {
-    text-align: center;
+h1, h2 {
+    color: #333;
 }
 
-.download-button {
-    background-color: #1a73e8;
-    color: white;
-    padding: 15px 25px;
-    text-decoration: none;
-    border-radius: 5px;
+h2 {
+    margin-top: 20px;
 }
 
-.download-button:hover {
-    background-color: #155cb0;
-}
-
-#update-logs ul, #comments ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-#update-logs li, #comments li {
-    background: #f4f4f4;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: left;
-    position: relative;
+li {
+    margin-bottom: 10px;
 }
 
-#comment-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
-#comment-type, #comment-input, #comment-images {
-    width: 80%;
-    margin: 10px 0;
-    padding: 10px;
+button:hover {
+    background-color: #0056b3;
 }
 
-#submit-comment {
-    background-color: #1a73e8;
-    color: white;
+/* Hero section */
+.hero {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Download section */
+#download {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
     padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-#submit-comment:hover {
-    background-color: #155cb0;
+.download-button:hover {
+    background-color: #218838;
 }
 
-.delete-button, .reply-button {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    background: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Update logs section */
+#update-logs {
+    padding: 40px 20px;
 }
 
-.reply-button {
-    background: green;
-    right: 80px;
-}
-
-.delete-button:hover {
-    background: darkred;
-}
-
-.reply-button:hover {
-    background: darkgreen;
+/* Comments section */
+#comments {
+    padding: 40px 20px;
 }
 
 .comment-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     margin-top: 10px;
 }
 
-.comment-image {
-    max-width: 100px;
-    height: auto;
-    margin-top: 10px;
+.delete-button, .reply-button {
+    margin-top: 5px;
 }
 
-.reply-form {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
+/* Levels section */
+#levels {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+}
+
+#upload-level-form {
+    margin-bottom: 20px;
+}
+
+#level-file-input {
+    margin-right: 10px;
+}
+
+.delete-level-button, .download-level-button {
+    margin-left: 10px;
 }
